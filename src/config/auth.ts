@@ -118,7 +118,7 @@ export const authOptions: AuthOptions = {
     async createUser({ user }) {
       await prismaClient.user.update({
         where: { id: user.id },
-        data: { name: 'Pabitra', age: 35 },
+        data: { age: 35 },
       });
     },
 
